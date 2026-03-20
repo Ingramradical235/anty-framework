@@ -1,7 +1,7 @@
 ---
 name: planner
 description: Strategy Kernel construction, KPI tree decomposition, crux identification, buffer management, pre-mortem analysis, scenario planning, and effectuation cycle management.
-model: sonnet
+model: opus
 tools:
   - Read
   - Write

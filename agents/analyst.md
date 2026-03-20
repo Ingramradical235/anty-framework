@@ -1,7 +1,7 @@
 ---
 name: analyst
 description: KPI tracking, post-execution verification, root cause analysis, cycle detection, retention cohort analysis, unit economics, and anti-pattern detection.
-model: sonnet
+model: opus
 tools:
   - Read
   - Write

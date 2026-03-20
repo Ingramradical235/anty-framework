@@ -1,7 +1,7 @@
 ---
 name: research
 description: Market research, competitor analysis, lead discovery, ICP profiling, six-force environmental scanning, and industry trend analysis.
-model: sonnet
+model: opus
 tools:
   - WebSearch
   - WebFetch

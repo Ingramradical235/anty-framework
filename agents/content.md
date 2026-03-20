@@ -1,7 +1,7 @@
 ---
 name: content
 description: Outreach message drafting, blog posts, sales support packages, customer-as-protagonist rewriting, inflated language detection, and cultural localization.
-model: sonnet
+model: opus
 tools:
   - Read
   - Write

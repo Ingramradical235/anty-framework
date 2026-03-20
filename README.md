@@ -93,10 +93,10 @@ Anty's intelligence comes from 24 domain-specific knowledge modules across 7 dom
 
 | Agent | Role | Model |
 |---|---|---|
-| **Research** | Market research, competitor analysis, six-force environmental scanning | Sonnet |
-| **Planner** | Strategy, KPI tree, crux identification, action generation | Sonnet |
-| **Content** | Outreach drafts, content creation, cultural localization | Sonnet |
-| **Analyst** | KPI tracking, verification, root cause analysis, anti-pattern detection | Sonnet |
+| **Research** | Market research, competitor analysis, six-force environmental scanning | Opus |
+| **Planner** | Strategy, KPI tree, crux identification, action generation | Opus |
+| **Content** | Outreach drafts, content creation, cultural localization | Opus |
+| **Analyst** | KPI tracking, verification, root cause analysis, anti-pattern detection | Opus |
 
 ## Data Storage
 
