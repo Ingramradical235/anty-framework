@@ -23,6 +23,29 @@ Anty is an AI workforce agent that operates as your S&M (Sales & Marketing) team
 
 ## Installation
 
+### Install from GitHub (recommended)
+
+In Claude Code, run:
+
+```
+/plugin
+```
+
+1. Navigate to the **Marketplaces** tab
+2. Select **Add marketplace** and enter: `masterleopold/anty-framework`
+3. Navigate to the **Discover** tab
+4. Find **anty** and install it
+
+After this, just run `claude` — Anty loads automatically in every session. No extra flags needed.
+
+You can choose a scope during installation:
+
+| Scope | Effect |
+|---|---|
+| **user** (default) | Available in all your projects |
+| **project** | Shared with your team via `.claude/settings.json` |
+| **local** | Only you, only this repository |
+
 ### Try It (one-time)
 
 ```bash
@@ -32,21 +55,17 @@ claude --plugin-dir ./anty-framework
 
 This loads the plugin for the current session only. You'll need to pass `--plugin-dir` each time.
 
-### Install Permanently (recommended)
+### Updating
 
-```bash
-git clone https://github.com/masterleopold/anty-framework.git
-
-# Register as a local marketplace and install
-claude plugins marketplace add ./anty-framework
-claude plugins install anty@anty-marketplace
+```
+/plugin
 ```
 
-After this, just run `claude` — Anty loads automatically in every session. No extra flags needed.
+Navigate to the **Installed** tab and select **Update** next to anty, or run `/reload-plugins` to refresh all plugins.
 
-> **Tip:** Clone the repo to a permanent location (e.g., `~/.claude/plugins/anty-framework`), not `/tmp` or a disposable directory. The marketplace registration stores the path, so if the directory disappears, the plugin won't load.
+### Requirements
 
-Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed and authenticated.
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed and authenticated
 
 ## Quick Start
 
